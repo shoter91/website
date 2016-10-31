@@ -33,7 +33,7 @@ $(function(){
 		$(".secondPart").on('scroll', function () {
 			var windowHeight = $(window).height();
 			var gridTop = windowHeight * .2;
-			var gridBottom = windowHeight * .9;
+			var gridBottom = windowHeight * .8;
 				
             $('.welcome').each(function () {
             var thisTop = $(this).offset().top;// - $(window).scrollTop();
