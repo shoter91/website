@@ -1,0 +1,206 @@
+.intro{
+		background-image:url(../img/background22.jpg);
+		height:100vh;
+		background-size:cover;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+}
+.card{
+		width:500px;
+		height:250px;
+		transition:all 200ms linear 0s;
+		margin:0;
+		padding:0;
+}
+.front, .back{
+		display:block;
+		position:absolute;
+		margin:0;
+		padding:0;
+		width:500px;
+		height:250px;
+		transition:transform 300ms linear 200ms;
+		transform-style:preserve-3d;
+		backface-visibility:hidden;
+		box-shadow: 0 0px 10px 2px rgba(0,0,0,0.2);
+		text-align:center;
+		background:#fff;
+}
+.card > .back{
+		transform:rotateY(180deg);	
+}
+.top{
+		display: flex;
+		align-items: center;
+		position:relative;
+		top:0;
+		width:100%;
+		height:20%;
+		background:#111;	
+}
+.middle{
+		display: flex;
+		align-items:center;
+		position:relative;
+		width:100%;
+		height:60%;
+		margin:0;	
+		border-bottom: 1px solid #fff;
+		border-top: 1px solid #fff;
+		background:url(../img/gradient.jpg);
+		font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.bottom{
+		display: flex;
+		align-items: center;
+		position:relative;
+		bottom:0;
+		width:100%;
+		height:20%;
+		margin:0;	
+		background:#111;
+}
+.card h1{
+		font-size:30px;
+		letter-spacing:1px;
+		color:#fff;
+		margin:0 auto;
+		padding:0;
+}
+.card h2{
+		font-family:"Comic Sans MS", cursive, sans-serif;
+		font-size:22px;
+		letter-spacing:1px;
+		color:#fff;
+		margin:0 auto;
+		padding:0;
+}
+.bottom h2{
+		margin-left:24%;
+}
+.front p{
+		font-family:"Comic Sans MS", cursive, sans-serif;
+		font-size:16px;
+		letter-spacing:0px;
+		color:#111;
+		margin:0 2%;
+		
+}
+.left{
+		display:block;
+		width:50%;
+		position:relative;
+		float:left;
+		font-size:16px;
+		letter-spacing:-2px;
+		word-spacing: 10px;
+		
+}
+.contact{
+		display: block;
+		width:50%;
+		position:relative;
+		float:left;
+		border-left:1px solid #444;
+		padding:20px;
+}
+.contact > p{
+		font-size:16px;
+		letter-spacing:0px;
+		color:#111;
+		text-align:justify;
+		margin:0;
+		margin-left:10%;
+		padding:0;
+		
+}
+
+.glyphicon-menu-right{
+		border: 1px solid #ccc;
+		border-radius:5px;
+		font-size:40px;	
+		color:#ccc;
+		cursor:pointer;
+		margin-left:auto; 
+		margin-right:2%;
+}
+.glyphicon-menu-left{
+		border: 1px solid #ccc;
+		border-radius:5px;
+		font-size:40px;	
+		color:#ccc;
+		cursor:pointer;
+		margin-left:2%; 
+}
+.glyphicon-menu-right:hover, .glyphicon-menu-left:hover,.enterSite:hover{
+		color:#111;
+		background-color:rgba(187, 125, 96 , 1);
+		border: 1px solid #444;
+}
+.goToPage{
+		box-shadow: 0 0px 10px 2px rgba(0,0,0,0.2);
+		display:block;
+		width:110px;
+		height:45px;
+		position:absolute;
+		bottom:0;
+		background:#111;
+		text-align:center;
+		padding:10px;
+		cursor:pointer;
+		border-radius: 30px 30px 0 0;
+		color:#ccc;
+		margin:0 auto;
+		margin-bottom:-45px;
+}
+.goToPage:hover{
+		color:#fff;	
+		height:80px;
+		transition:all 0.2s;
+		
+}
+@keyframes scalable {
+  0% {
+    transform: scale(1.0);
+  }
+  50%{
+	transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.0);
+  }
+}
+ @media only screen
+    and (min-width : 310px)
+    and (max-width : 400px){
+		.card{
+			width:320px;
+		}
+		.front{
+			width:320px;
+		}
+		.back{
+			width:320px;
+		}
+	    	.left p{
+	    		padding:5px;
+	    	}
+	    	.front p{
+	    		text-align:justify;
+	    	}
+		.contact{
+		padding:10px 5px;
+		}
+		.contact > p{
+		font-size:14px;
+		letter-spacing:-1px;
+		margin-left:5%;
+		}
+		.bottom h2{
+			margin-left:11%;
+		}
+		.goToPage{
+			display:none;
+		}
+}

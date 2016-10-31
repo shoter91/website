@@ -1,0 +1,38 @@
+.secondPart{
+		height:100vh;
+		overflow-y: scroll;
+		text-align:center;
+
+}
+.welcomePage{
+		margin-top:50vh;
+		margin-bottom:80vh;	
+}
+.welcome{
+		display:block;
+		position:relative;
+		height:100%;
+		margin-top:20vh;
+		padding:0;
+		transition: all 0.4s ease;
+}
+.welcome h1{
+		display:block;	
+		font-size:px;
+		padding:0;
+		margin:0;
+}
+.welcomeo{
+		color:#fff;
+		transform: scale(2);
+		transition: all 0.5s ease;
+}
+.black{
+	background:#111;
+}
+.red{
+	background-image:url(../img/background.jpeg);
+	background-size:cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
